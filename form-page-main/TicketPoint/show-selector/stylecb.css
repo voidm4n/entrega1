@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+/* hacer un fondo  */
+
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'Antonio', sans-serif;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+}
+
+.container{
+    grid-template-colurgba(255, 255, 255, 0.966)
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    /* centrar */
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f1f1f1; */
+    background-image: url("../img/publico.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+.row {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.escenario {
+    color: white;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(46, 81, 163)
+}
+    
+
+.btn {
+    padding-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: white;
+    background-color: rgb(48, 98, 214);
+    border-radius: 50px;
+    border-color: rgb(35, 57, 109);
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    /* separar los botones */
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.col-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* hacer que cuando se seleccione un boton este cambie de color */
+.btn:hover {
+    background-color: rgb(117, 156, 247);
+    color: white;
+}
+
+header{
+    background-color: rgba(240, 240, 240, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header #logo{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    box-sizing: border-box;  
+}
+
+header .nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 0;
+    padding-right: 35px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+header a:hover{
+    color: rgb(37, 37, 37);
+    text-decoration:underline;
+}
+
+.footer{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 13px;
+}
